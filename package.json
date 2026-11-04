@@ -1,0 +1,29 @@
+{
+  "name": "tasktracker",
+  "version": "1.0.0",
+  "description": "Simple training app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysi3q/taskTracker.git"
+  },
+  "author": "Krzysztof Turczynski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krzysi3q/taskTracker/issues"
+  },
+  "homepage": "https://github.com/krzysi3q/taskTracker#readme",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "express": "^5.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0"
+  }
+}
