@@ -1,9 +1,10 @@
-import express, { Request, Response } from "express";
+import express, { type Request, type Response } from "express";
 
 const app = express();
-const port = 3000;
+const port = Number(process.env.port) || 3000;
 
 app.get("/health", (_req: Request, res: Response) => {
+  res.setHeaders(new Headers({ "Content-Type": "application/json" }));
   res.send(JSON.stringify({ status: "ok" }));
 });
 
